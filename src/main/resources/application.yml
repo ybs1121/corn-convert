@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+
+mybatis:
+  #  type-aliases-package: finger.econtract.biz.vo
+  #  mapper-locations: classpath:**/*/mapper/*.xml
+  mapper-locations: classpath:/mapper/*.xml
+
+spring:
+  devtools:
+    livereload:
+      enabled: true
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 2000MB
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/scheduler
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 30000
+      connection-timeout: 0

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.cornconvert.mapper.TestMapper" >
+
+    <select id="test" resultType="string">
+       select 'test';
+    </select>
+
+    <select id="getEmailList" resultType="com.example.cornconvert.dao.EmailDAO">
+        select * from tb_email where use_yn is null;
+    </select>
+
+    <update id="updateEmail" parameterType="String">
+        UPDATE tb_email SET use_yn = 'Y', timeline = NOW() WHERE email = #{email};
+    </update>
+
+
+
+</mapper>

@@ -11,7 +11,10 @@ public class CornService {
     public String cornConvert(CornDto cornDto){
         String cornType = cornDto.getCornType();
         String corn = "";
-
+        if(cornType.equals("SEC_EVERY")){
+            corn = CornType.SEC_EVERY;
+            corn = corn.replace("SEC",cornDto.getMin());
+        }
         if(cornType.equals("MIN_EVERY")){
             corn = CornType.MIN_EVERY;
             corn = corn.replace("MIN",cornDto.getMin());

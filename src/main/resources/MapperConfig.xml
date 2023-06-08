@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--	<settings>-->
+<!--		<setting name="mapUnderscoreToCamelCase" value="true" />-->
+<!--		<setting name="jdbcTypeForNull" value="NULL" />-->
+<!--		<setting name="callSettersOnNulls" value="true" />-->
+<!--	</settings>-->
+	<typeAliases>
+<!--		<typeAlias  alias="TestVO"  type="finger.forest.api.biz.vo.TestVO"/>-->
+<!--		<typeAlias  alias="DwVO"  type="finger.forest.api.biz.vo.DwVO"/>-->
+<!--		<typeAlias  alias="DwpmsEmpVO"  type="finger.forest.api.biz.vo.DwpmsEmpVO"/>-->
+<!--		<typeAlias  alias="DwSaveVO"  type="finger.forest.api.biz.vo.DwSaveVO"/>-->
+<!--		<typeAlias  alias="DwBerrySeedVO"  type="finger.forest.api.biz.vo.DwBerrySeedVO"/>-->
+<!--		<typeAlias  alias="DwAdminVO"  type="finger.forest.api.biz.vo.DwAdminVO"/>-->
+		<typeAlias alias="hashMap" type="java.util.HashMap"/>
+        <typeAlias alias="string" type="java.lang.String"/>
+		<typeAlias alias="jobList" type="com.example.cornconvert.dao.JobListDAO"/>
+	</typeAliases>
+</configuration>
